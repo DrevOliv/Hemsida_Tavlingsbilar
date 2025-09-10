@@ -15,6 +15,8 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        racing: "bg-gradient-racing text-primary-foreground racing-glow hover:shadow-glow font-semibold",
+        "racing-outline": "border-2 border-racing-blue bg-transparent text-racing-blue hover:bg-racing-blue hover:text-racing-dark racing-glow",
       },
       size: {
         default: "h-10 px-4 py-2",

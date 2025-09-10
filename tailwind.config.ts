@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,16 +48,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        racing: {
+          blue: "hsl(var(--racing-blue))",
+          "blue-glow": "hsl(var(--racing-blue-glow))",
+          dark: "hsl(var(--racing-dark))",
+          surface: "hsl(var(--racing-surface))",
+          border: "hsl(var(--racing-border))",
         },
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-racing': 'var(--gradient-racing)',
+        'gradient-glow': 'var(--gradient-glow)',
+      },
+      boxShadow: {
+        'racing': 'var(--shadow-racing)',
+        'glow': 'var(--shadow-glow)',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +91,8 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "speed-lines": "speed-lines 2s ease-in-out infinite",
+        "racing-pulse": "racing-pulse 2s ease-in-out infinite",
       },
     },
   },
