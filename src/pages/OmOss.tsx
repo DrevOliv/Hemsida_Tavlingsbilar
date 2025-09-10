@@ -1,8 +1,38 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Target, Lightbulb, Trophy } from "lucide-react";
+import { Users, Target, Lightbulb, Trophy, Wrench, Cpu, Zap } from "lucide-react";
+import erikImage from "@/assets/team-erik.jpg";
+import annaImage from "@/assets/team-anna.jpg";
+import marcusImage from "@/assets/team-marcus.jpg";
 
 const OmOss = () => {
+  const teamMembers = [
+    {
+      name: "Erik Andersson",
+      role: "Projektledare & Mekanik",
+      image: erikImage,
+      description: "Med över 10 års erfarenhet inom RC racing leder Erik projektet med fokus på chassi design och mekaniska komponenter. Hans passion för precision och innovation driver teamets tekniska utveckling.",
+      specialties: ["Chassi Design", "Fjädring", "Drivsystem", "CAD Modellering"],
+      icon: Wrench
+    },
+    {
+      name: "Anna Lindqvist",
+      role: "Elektronik & Programmering",
+      image: annaImage,
+      description: "Anna ansvarar för all elektronik i bilen, från ESC programmering till telemetri system. Hennes bakgrund inom embedded systems gör henne till hjärnan bakom bilens intelligenta funktioner.",
+      specialties: ["ESC Programmering", "Telemetri", "Radio System", "Sensorer"],
+      icon: Cpu
+    },
+    {
+      name: "Marcus Svensson",
+      role: "Motor & Performance",
+      image: marcusImage,
+      description: "Marcus specialiserar sig på motor optimering och prestanda tuning. Hans kunskap om aerodynamik och viktfördelning hjälper till att maximera bilens hastighet och hantering på banan.",
+      specialties: ["Motor Tuning", "Aerodynamik", "Viktbalans", "Banhållning"],
+      icon: Zap
+    }
+  ];
+
   const teamValues = [
     {
       icon: Target,
@@ -21,15 +51,6 @@ const OmOss = () => {
     }
   ];
 
-  const skills = [
-    "Mekanik & Konstruktion",
-    "Elektronik & Programmering",
-    "RC Racing Teknik",
-    "Material Kunskap",
-    "Performance Optimering",
-    "CAD Design"
-  ];
-
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -41,6 +62,51 @@ const OmOss = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Vi är passionerade ingenjörer och RC enthusiaster som drömmer om att bygga den perfekta radiostyrd tävlingsbilen
           </p>
+        </div>
+
+        {/* Team Members */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Vårt <span className="gradient-text">Team</span>
+          </h2>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => {
+              const Icon = member.icon;
+              return (
+                <Card key={index} className="racing-glow bg-racing-surface border-racing-border">
+                  <CardContent className="p-6 text-center">
+                    <div className="relative mb-6">
+                      <img 
+                        src={member.image} 
+                        alt={`${member.name} - ${member.role}`}
+                        className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-racing-blue/50"
+                      />
+                      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-racing rounded-full flex items-center justify-center">
+                        <Icon className="text-racing-dark" size={20} />
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                    <p className="text-racing-blue font-semibold mb-4">{member.role}</p>
+                    <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
+                      {member.description}
+                    </p>
+                    
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-sm">Specialiteter:</h4>
+                      <div className="flex flex-wrap gap-2 justify-center">
+                        {member.specialties.map((specialty, specialtyIndex) => (
+                          <Badge key={specialtyIndex} variant="outline" className="text-xs">
+                            {specialty}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
         </div>
 
         {/* Mission Statement */}
@@ -78,58 +144,6 @@ const OmOss = () => {
               );
             })}
           </div>
-        </div>
-
-        {/* Skills & Expertise */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-12">
-          <Card className="racing-glow bg-racing-surface border-racing-border">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">
-                <span className="gradient-text">Kompetensområden</span>
-              </h3>
-              <div className="grid grid-cols-2 gap-3">
-                {skills.map((skill, index) => (
-                  <Badge key={index} variant="outline" className="p-2 justify-center text-center">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="racing-glow bg-racing-surface border-racing-border">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">
-                <span className="gradient-text">Projektmål</span>
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-racing-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-muted-foreground">
-                    Bygga en konkurrensmässig RC bil för nationella tävlingar
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-racing-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-muted-foreground">
-                    Dokumentera hela processen för andra entusiaster
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-racing-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-muted-foreground">
-                    Utveckla innovativa lösningar för bättre prestanda
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-racing-blue rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span className="text-muted-foreground">
-                    Bidra till RC racing communityn med kunskap och erfarenhet
-                  </span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
         </div>
 
         {/* Background Story */}
