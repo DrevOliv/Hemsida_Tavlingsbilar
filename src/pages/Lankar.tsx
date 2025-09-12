@@ -21,7 +21,7 @@ const Lankar = () => {
         {
           name: "GitHub Repository",
           url: "https://github.com",
-          description: "Källkod för projektet och CAD filer",
+          description: "Källkod för projektet",
           icon: Github,
           badge: "Open Source"
         },

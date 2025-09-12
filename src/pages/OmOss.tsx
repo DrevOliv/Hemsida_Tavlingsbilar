@@ -15,7 +15,7 @@ const OmOss = () => {
       name: "Elias Facq",
       role: "Kundansvarig",
       image: annaImage,
-      description: "Han är ansvargi för vår kund",
+      description: "Han är ansvarig för vår kund",
       specialties: ["Kundansvar"],
     },
     {
@@ -29,7 +29,7 @@ const OmOss = () => {
       name: "Abdulrahman Barakat",
       role: "Plannerings- och tidsansvarig",
       image: Abdulrahman,
-      description: "Asvarar för tiden",
+      description: "Ansvarar för tiden",
       specialties: ["Tid"],
     },
     {
@@ -50,7 +50,7 @@ const OmOss = () => {
       name: "Gustav Yttermalm",
       role: "Implementationsavnsvarig",
       image: marcusImage,
-      description: "Implementerar ansvar",
+      description: "Implementerar ansvarigt",
       specialties: ["Implementation"],
     },
     {
@@ -182,7 +182,7 @@ const OmOss = () => {
             <div className="max-w-4xl mx-auto space-y-4 text-muted-foreground">
               <p>
                 Det hela börjada för länge sedan, i begynnelsen skapade gud himmel och jord. Och jorden var öde och tom, och mörker var över djupet, och Guds
-Ande svävade över vattnet. Och Gud sade: »Varde RÄJSERBIL; och det vart Räjserbil.
+                Ande svävade över vattnet. Och Gud sade: »Varde RÄJSERBIL; och det vart Räjserbil.
               </p>
               <p>
                 

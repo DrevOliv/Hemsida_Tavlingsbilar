@@ -9,8 +9,8 @@ const Byggprocess = () => {
       id: 1,
       title: "Chassi & Ram",
       description: "Konstruktion av grundchassit i kolfiber med optimal viktfördelning",
-      status: "completed",
-      progress: 100,
+      status: "in-progress",
+      progress: 5,
       icon: Wrench,
       details: [
         "Kolfiber chassi för minimal vikt",
@@ -23,8 +23,8 @@ const Byggprocess = () => {
       id: 2,
       title: "Fjädring & Hjul",
       description: "Installation av justerbar fjädring och högkvalitativa däck",
-      status: "completed",
-      progress: 100,
+      status: "in-progress",
+      progress: 0,
       icon: Settings,
       details: [
         "Ställbara stötdämpare fram/bak",
@@ -38,7 +38,7 @@ const Byggprocess = () => {
       title: "Motor & Drivsystem",
       description: "Borstlös motor med avancerat ESC för maximal kraft",
       status: "in-progress",
-      progress: 75,
+      progress: 0,
       icon: Zap,
       details: [
         "Sensored borstlös motor",
@@ -52,7 +52,7 @@ const Byggprocess = () => {
       title: "Elektronik & Radio",
       description: "Högfrekvens radiosystem och avancerad elektronik",
       status: "in-progress",
-      progress: 60,
+      progress: 0,
       icon: Cpu,
       details: [
         "2.4GHz radiosystem",
@@ -66,7 +66,7 @@ const Byggprocess = () => {
       title: "Kalibrering & Test",
       description: "Finjustering av alla system för optimal prestanda",
       status: "planned",
-      progress: 20,
+      progress: 0,
       icon: CheckCircle,
       details: [
         "Balansering av chassis",
@@ -115,7 +115,7 @@ const Byggprocess = () => {
             <span className="gradient-text">Byggprocess</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Följ varje steg i konstruktionen av vår radiostyrd tävlingsbil, från chassi till färdig racer
+            Följ varje steg i konstruktionen av vår autonoma tävlingsbil, från chassi till färdig räcerbil
           </p>
           
           {/* Overall Progress */}
@@ -201,8 +201,8 @@ const Byggprocess = () => {
                 <span className="gradient-text">Nuvarande Fokus</span>
               </h3>
               <p className="text-muted-foreground">
-                Vi arbetar intensivt med motor optimering och elektronik integration. 
-                Förvänta dig uppdateringar inom kort!
+                Vi arbetar intensivt med optimering och integration. 
+                Förvänta dig uppdateringar inom snar framtid!
               </p>
             </CardContent>
           </Card>

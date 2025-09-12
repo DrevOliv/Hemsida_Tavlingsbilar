@@ -19,13 +19,13 @@ const Home = () => {
           </div>
           
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="gradient-text">RADIOSTYRD</span>
+            <span className="gradient-text">AUTONOM</span>
             <br />
             <span className="text-foreground">TÄVLINGSBIL</span>
           </h1>
           
           <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Följ med på vår resa när vi bygger och utvecklar en professionell radiostyrd tävlingsbil från grunden
+            Följ med på vår resa när vi bygger och utvecklar en professionell autonom tävlingsbil från grunden
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -61,9 +61,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-gradient-racing rounded-full flex items-center justify-center mx-auto mb-4">
                   <Wrench className="text-racing-dark" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Precision i Byggnaden</h3>
+                <h3 className="text-xl font-semibold mb-3">Precision</h3>
                 <p className="text-muted-foreground">
-                  Varje komponent väljs och monteras med extrema noggrannhet för maximal prestanda
+                  Varje komponent väljs och monteras med extrem noggrannhet för maximal prestanda
                 </p>
               </CardContent>
             </Card>
@@ -102,7 +102,7 @@ const Home = () => {
             Redo att <span className="gradient-text">Börja Bygga?</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Följ vår detaljerade byggprocess och lär dig allt om radiostyrd racing
+            Följ vår detaljerade byggprocess och lär dig allt om autonom racing
           </p>
           <Link to="/byggprocess">
             <Button variant="racing" size="lg" className="racing-pulse">
