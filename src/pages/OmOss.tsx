@@ -8,29 +8,62 @@ import marcusImage from "@/assets/team-marcus.jpg";
 const OmOss = () => {
   const teamMembers = [
     {
-      name: "Erik Andersson",
-      role: "Projektledare & Mekanik",
-      image: erikImage,
-      description: "Med över 10 års erfarenhet inom RC racing leder Erik projektet med fokus på chassi design och mekaniska komponenter. Hans passion för precision och innovation driver teamets tekniska utveckling.",
-      specialties: ["Chassi Design", "Fjädring", "Drivsystem", "CAD Modellering"],
-      icon: Wrench
-    },
-    {
-      name: "Anna Lindqvist",
-      role: "Elektronik & Programmering",
+      name: "Elias Facq",
+      role: "Kundansvarig",
       image: annaImage,
-      description: "Anna ansvarar för all elektronik i bilen, från ESC programmering till telemetri system. Hennes bakgrund inom embedded systems gör henne till hjärnan bakom bilens intelligenta funktioner.",
-      specialties: ["ESC Programmering", "Telemetri", "Radio System", "Sensorer"],
+      description: "Han är ansvargi för vår kund",
+      specialties: ["Kundansvar"],
       icon: Cpu
     },
     {
-      name: "Marcus Svensson",
-      role: "Motor & Performance",
+      name: "Herman Stjerna",
+      role: "Dokumentansvarig",
+      image: annaImage,
+      description: "Dokumenterar",
+      specialties: ["Dokumentföring"],
+      icon: Cpu
+    },
+    {
+      name: "Abdulrahman Barakat",
+      role: "Plannerings- och tidsansvarig",
       image: marcusImage,
-      description: "Marcus specialiserar sig på motor optimering och prestanda tuning. Hans kunskap om aerodynamik och viktfördelning hjälper till att maximera bilens hastighet och hantering på banan.",
-      specialties: ["Motor Tuning", "Aerodynamik", "Viktbalans", "Banhållning"],
+      description: "Asvarar för tiden",
+      specialties: ["Tid"],
       icon: Zap
+    },
+    {
+      name: "Edvin André",
+      role: "Testansvarig",
+      image: marcusImage,
+      description: "Testar",
+      specialties: ["Test"],
+      icon: Zap
+    },
+    {
+      name: "Pontus Östlund",
+      role: "Kvalitetssammordnare",
+      image: marcusImage,
+      description: "Sammordnar kvalitet",
+      specialties: ["Sammordning"],
+      icon: Zap
+    },
+    {
+      name: "Gustav Yttermalm",
+      role: "Implementationsavnsvarig",
+      image: marcusImage,
+      description: "Implementerar ansvar",
+      specialties: ["Implementation"],
+      icon: Zap
+    },
+    {
+      name: "Oliver",
+      role: "Projektledare",
+      image: erikImage,
+      description: "Han projektleder",
+      specialties: ["CProjektledning"],
+      icon: Wrench
     }
+
   ];
 
   const teamValues = [
