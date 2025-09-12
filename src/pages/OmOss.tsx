@@ -3,6 +3,10 @@ import { Badge } from "@/components/ui/badge";
 import { Users, Target, Lightbulb, Trophy, Wrench, Cpu, Zap } from "lucide-react";
 import erikImage from "@/assets/team-erik.jpg";
 import annaImage from "@/assets/team-anna.jpg";
+import Abdulrahman from "@/assets/Abdulrahman.jpg";
+import Edvin from "@/assets/Edvin.jpg";
+import Oliver from "@/assets/Oliver.jpg";
+import  Herman from "@/assets/Herman.jpg"
 import marcusImage from "@/assets/team-marcus.jpg";
 
 const OmOss = () => {
@@ -18,7 +22,7 @@ const OmOss = () => {
     {
       name: "Herman Stjerna",
       role: "Dokumentansvarig",
-      image: annaImage,
+      image: Herman,
       description: "Dokumenterar",
       specialties: ["Dokumentföring"],
       icon: Cpu
@@ -26,7 +30,7 @@ const OmOss = () => {
     {
       name: "Abdulrahman Barakat",
       role: "Plannerings- och tidsansvarig",
-      image: marcusImage,
+      image: Abdulrahman,
       description: "Asvarar för tiden",
       specialties: ["Tid"],
       icon: Zap
@@ -34,7 +38,7 @@ const OmOss = () => {
     {
       name: "Edvin André",
       role: "Testansvarig",
-      image: marcusImage,
+      image: Edvin,
       description: "Testar",
       specialties: ["Test"],
       icon: Zap
@@ -58,7 +62,7 @@ const OmOss = () => {
     {
       name: "Oliver",
       role: "Projektledare",
-      image: erikImage,
+      image: Oliver,
       description: "Han projektleder",
       specialties: ["CProjektledning"],
       icon: Wrench
