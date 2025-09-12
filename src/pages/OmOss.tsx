@@ -17,7 +17,6 @@ const OmOss = () => {
       image: annaImage,
       description: "Han är ansvargi för vår kund",
       specialties: ["Kundansvar"],
-      icon: Cpu
     },
     {
       name: "Herman Stjerna",
@@ -25,7 +24,6 @@ const OmOss = () => {
       image: Herman,
       description: "Dokumenterar",
       specialties: ["Dokumentföring"],
-      icon: Cpu
     },
     {
       name: "Abdulrahman Barakat",
@@ -33,7 +31,6 @@ const OmOss = () => {
       image: Abdulrahman,
       description: "Asvarar för tiden",
       specialties: ["Tid"],
-      icon: Zap
     },
     {
       name: "Edvin André",
@@ -41,7 +38,6 @@ const OmOss = () => {
       image: Edvin,
       description: "Testar",
       specialties: ["Test"],
-      icon: Zap
     },
     {
       name: "Pontus Östlund",
@@ -49,7 +45,6 @@ const OmOss = () => {
       image: marcusImage,
       description: "Sammordnar kvalitet",
       specialties: ["Sammordning"],
-      icon: Zap
     },
     {
       name: "Gustav Yttermalm",
@@ -57,7 +52,6 @@ const OmOss = () => {
       image: marcusImage,
       description: "Implementerar ansvar",
       specialties: ["Implementation"],
-      icon: Zap
     },
     {
       name: "Oliver",
@@ -65,7 +59,6 @@ const OmOss = () => {
       image: Oliver,
       description: "Han projektleder",
       specialties: ["CProjektledning"],
-      icon: Wrench
     }
 
   ];
@@ -73,18 +66,18 @@ const OmOss = () => {
   const teamValues = [
     {
       icon: Target,
-      title: "Precision",
-      description: "Varje komponent och varje steg utförs med extrema noggrannhet"
+      title: "Strength in numbers",
+      description: "En miljon apor med skrivmaskiner och sådant.. "
     },
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "Vi utforskar nya tekniker och lösningar för bättre prestanda"
+      description: "Tänker utanför lådan"
     },
     {
       icon: Trophy,
       title: "Excellence",
-      description: "Målet är alltid att uppnå högsta möjliga kvalitet och prestanda"
+      description: "Se ovan"
     }
   ];
 
@@ -97,7 +90,7 @@ const OmOss = () => {
             <span className="gradient-text">Om Oss</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Vi är passionerade ingenjörer och RC enthusiaster som drömmer om att bygga den perfekta radiostyrd tävlingsbilen
+            Vi är passionerade ingengörsstudenter som ständigt bygger bil
           </p>
         </div>
 
@@ -118,9 +111,7 @@ const OmOss = () => {
                         alt={`${member.name} - ${member.role}`}
                         className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-racing-blue/50"
                       />
-                      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-racing rounded-full flex items-center justify-center">
-                        <Icon className="text-racing-dark" size={20} />
-                      </div>
+
                     </div>
                     
                     <h3 className="text-xl font-bold mb-2">{member.name}</h3>
@@ -152,10 +143,9 @@ const OmOss = () => {
             <div className="w-16 h-16 bg-gradient-racing rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="text-racing-dark" size={32} />
             </div>
-            <h2 className="text-2xl font-bold mb-4">Vår Mission</h2>
+            <h2 className="text-2xl font-bold mb-4">Vårt uppdrag</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Att kombinera teknisk excellens med passion för racing för att skapa en radiostyrd bil 
-              som inte bara presterar utan också inspirerar andra att utforska möjligheterna inom RC racing.
+              Att kombinera teknisk okunskap med brute force för att skapa den snabbaste tävlingsbil som skådats
             </p>
           </CardContent>
         </Card>
@@ -191,19 +181,14 @@ const OmOss = () => {
             </h3>
             <div className="max-w-4xl mx-auto space-y-4 text-muted-foreground">
               <p>
-                Det hela började som en enkel idé - att bygga den ultimata radiostyrd racingbilen. 
-                Med bakgrund inom teknik och en livslång passion för racing, bestämde vi oss för att 
-                kombinera dessa intressen i ett ambitiöst projekt.
+                Det hela börjada för länge sedan, i begynnelsen skapade gud himmel och jord. Och jorden var öde och tom, och mörker var över djupet, och Guds
+Ande svävade över vattnet. Och Gud sade: »Varde RÄJSERBIL; och det vart Räjserbil.
               </p>
               <p>
-                Efter månader av planering och research började vi designa vår drömracerbil. 
-                Varje komponent har valts noggrant, varje detalj har analyserats för att optimera 
-                prestanda på banan.
+                
               </p>
               <p>
-                Genom denna hemsida vill vi dela vår resa med andra som delar samma passion. 
-                Oavsett om du är nybörjare eller erfaren racer, hoppas vi att vårt projekt 
-                kan inspirera och utbilda.
+                
               </p>
             </div>
           </CardContent>
