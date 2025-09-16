@@ -13,7 +13,7 @@ const Home = () => {
           <div className="mb-8">
             <img 
               src="/lovable-uploads/308d28bf-273a-45e0-b317-a0a9fc82395a.png" 
-              alt="Tävlingsbilar.se Logo" 
+              alt="Tavlingsbilar.se Logo" 
               className="h-32 w-auto mx-auto mb-6"
             />
           </div>

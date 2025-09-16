@@ -24,11 +24,11 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/308d28bf-273a-45e0-b317-a0a9fc82395a.png" 
-              alt="Tävlingsbilar.se Logo" 
+              alt="Tavlingsbilar.se Logo" 
               className="h-8 w-auto"
             />
             <span className="text-xl font-bold gradient-text hidden sm:block">
-              TÄVLINGSBILAR.SE
+              TAVLINGSBILAR.SE
             </span>
           </Link>
 
