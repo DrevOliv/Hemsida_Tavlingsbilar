@@ -48,7 +48,7 @@ const OmOss = () => {
     },
     {
       name: "Gustav Yttermalm",
-      role: "Implementationsavnsvarig",
+      role: "Implementationsansvarig",
       image: marcusImage,
       description: "Implementerar ansvarigt",
       specialties: ["Implementation"],
