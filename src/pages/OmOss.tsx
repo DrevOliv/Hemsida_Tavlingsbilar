@@ -2,19 +2,20 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Target, Lightbulb, Trophy, Wrench, Cpu, Zap } from "lucide-react";
 import erikImage from "@/assets/team-erik.jpg";
-import annaImage from "@/assets/team-anna.jpg";
+import Elias from "@/assets/Elias.png";
 import Abdulrahman from "@/assets/Abdulrahman.jpg";
 import Edvin from "@/assets/Edvin.jpg";
 import Oliver from "@/assets/Oliver.jpg";
 import  Herman from "@/assets/Herman.jpg"
-import marcusImage from "@/assets/team-marcus.jpg";
+import Pontus from "@/assets/Pontus.jpg";
+import Gustav from "@/assets/Gustav.png";
 
 const OmOss = () => {
   const teamMembers = [
     {
       name: "Elias Facq",
       role: "Kundansvarig",
-      image: annaImage,
+      image: Elias,
       description: "Han är ansvarig för vår kund",
       specialties: ["Kundansvar"],
     },
@@ -42,14 +43,14 @@ const OmOss = () => {
     {
       name: "Pontus Östlund",
       role: "Kvalitetssammordnare",
-      image: marcusImage,
+      image: Pontus,
       description: "Sammordnar kvalitet",
       specialties: ["Sammordning"],
     },
     {
       name: "Gustav Yttermalm",
       role: "Implementationsavnsvarig",
-      image: marcusImage,
+      image: Gustav,
       description: "Implementerar ansvarigt",
       specialties: ["Implementation"],
     },
